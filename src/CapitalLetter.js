@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './style.css';
+import "./style.css";
 
 export default function TextForm(props) {
   const handleUpClick = () => {
@@ -37,7 +37,10 @@ export default function TextForm(props) {
         <button className="primary " onClick={handleLowClick}>
           Convert to Lowercase
         </button>
-        <button  className="copy" onClick={() => navigator.clipboard.writeText(`${text}`)}>
+        <button
+          className="copy"
+          onClick={() => navigator.clipboard.writeText(`${text}`)}
+        >
           Copy
         </button>
         <h3>Text summary</h3>
