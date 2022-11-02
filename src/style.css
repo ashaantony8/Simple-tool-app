@@ -1,0 +1,27 @@
+.container {
+}
+
+.primary,
+.copy,
+.secondary {
+  background-color: #4c5caf; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 4px 2px 4px;
+  cursor: pointer;
+  border-radius: 10px;
+
+}
+.copy {
+  background-color: #af4c4c; 
+
+}
+.secondary {
+  background-color: #4caf50; 
+}
+

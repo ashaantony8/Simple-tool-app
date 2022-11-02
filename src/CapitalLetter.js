@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './style.css';
 
 export default function TextForm(props) {
   const handleUpClick = () => {
@@ -30,13 +31,13 @@ export default function TextForm(props) {
             rows="8"
           ></textarea>
         </div>
-        <button className="btn btn-secondary mx-1" onClick={handleUpClick}>
+        <button className="secondary" onClick={handleUpClick}>
           Convert to Uppercase
         </button>
-        <button className="btn btn-primary mx-1 " onClick={handleLowClick}>
+        <button className="primary " onClick={handleLowClick}>
           Convert to Lowercase
         </button>
-        <button onClick={() => navigator.clipboard.writeText(`${text}`)}>
+        <button  className="copy" onClick={() => navigator.clipboard.writeText(`${text}`)}>
           Copy
         </button>
         <h3>Text summary</h3>
