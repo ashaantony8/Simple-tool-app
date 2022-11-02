@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
 
-
 export default function TextForm(props) {
   const handleUpClick = () => {
     let newText = text.toUpperCase();
@@ -14,10 +13,7 @@ export default function TextForm(props) {
     let newText2 = text.toLowerCase();
     setText(newText2);
   };
-
-
   
-
   const [text, setText] = useState("Enter Text Here");
   return (
     <>
@@ -38,7 +34,7 @@ export default function TextForm(props) {
         <button className="btn btn-primary mx-1" onClick={handleLowClick}>
           Convert to Lowercase
         </button>
-      
+        
       </div>
       <div className="container my-3">
         <h1>Your Text Summery</h1>
