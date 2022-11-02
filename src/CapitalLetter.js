@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 
-import ClipboardJS from "clipboard";
-
 export default function TextForm(props) {
   const handleUpClick = () => {
     let newText = text.toUpperCase();
